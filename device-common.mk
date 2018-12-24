@@ -198,6 +198,21 @@ PRODUCT_PRODUCT_PROPERTIES += \
     persist.dirac.acs.storeSettings=1 \
     ro.audio.soundfx.dirac=true
 
+# WiFi Display
+PRODUCT_PACKAGES += \
+    libaacwrapper \
+    libnl
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    vendor.gralloc.enable_fb_ubwc=1 \
+    vendor.gralloc.disable_wb_ubwc=1 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.nohdcp=1 \
+    debug.sf.enable_hwc_vds=1
+
 # Audio effects
 PRODUCT_PACKAGES += \
     libqcomvisualizer \
