@@ -206,3 +206,7 @@
 
 # b/70518189 vDSO experiments
 /sys/module/vdso/parameters  u:object_r:sysfs_vdso:s0
+
+# WfdService
+/vendor/bin/wifidisplayhalservice   u:object_r:wifidisplayhalservice_exec:s0
+/system/bin/wfdservice              u:object_r:wfdservice_exec:s0

@@ -1,0 +1,5 @@
+# wfdservice service
+type wfdservice, domain;
+type wfdservice_exec, exec_type, file_type;
+
+init_daemon_domain(wfdservice)

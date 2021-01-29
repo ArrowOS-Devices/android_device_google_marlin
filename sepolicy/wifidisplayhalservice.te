@@ -1,0 +1,9 @@
+# wifidisplayhalservice service
+type wifidisplayhalservice, domain;
+type wifidisplayhalservice_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(wifidisplayhalservice)
+
+allow system_app wfdservice_prop:property_service set;
+
+vndbinder_use(wifidisplayhalservice)

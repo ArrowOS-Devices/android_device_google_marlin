@@ -203,7 +203,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # WiFi Display
 PRODUCT_PACKAGES += \
     libaacwrapper \
-    libnl
+    libnl \
+    libdisplayconfig
 
 PRODUCT_BOOT_JARS += \
     WfdCommon

@@ -12,3 +12,4 @@ type post_boot_prop, property_type;
 type bluetooth_log_prop, property_type;
 type vendor_charge_prop, property_type;
 type dirac_prop, property_type;
+type wfdservice_prop, property_type;
