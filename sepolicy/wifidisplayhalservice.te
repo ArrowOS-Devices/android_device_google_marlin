@@ -7,3 +7,15 @@ init_daemon_domain(wifidisplayhalservice)
 allow system_app wfdservice_prop:property_service set;
 
 vndbinder_use(wifidisplayhalservice)
+
+binder_call(wifidisplayhalservice_client, wifidisplayhalservice_server)
+binder_call(wifidisplayhalservice_server, wifidisplayhalservice_client)
+
+add_hwservice(wifidisplayhalservice_server, wifidisplayhalservice_hwservice)
+
+add_service(wifidisplayhalservice, wfdnativemm_service)
+
+r_dir_file(wifidisplayhalservice, firmware_file)
+
+allow wifidisplayhalservice tee_device:chr_file rw_file_perms;
+allow wifidisplayhalservice ion_device:chr_file r_file_perms;

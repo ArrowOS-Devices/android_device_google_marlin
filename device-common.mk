@@ -204,7 +204,9 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     libaacwrapper \
     libnl \
-    libdisplayconfig
+    libdisplayconfig \
+    libqdMetaData \
+    libqdMetaData.system
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
