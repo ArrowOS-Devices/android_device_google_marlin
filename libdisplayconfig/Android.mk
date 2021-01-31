@@ -6,7 +6,7 @@ LOCAL_PROPRIETARY_MODULE      := true
 LOCAL_USE_VNDK                := true
 LOCAL_MODULE_TAGS             := optional
 LOCAL_C_INCLUDES              := $(common_includes)
-LOCAL_HEADER_LIBRARIES        := display_headers
+LOCAL_HEADER_LIBRARIES        := libhardware_headers
 LOCAL_SRC_FILES               := DisplayConfig.cpp
 LOCAL_SHARED_LIBRARIES        := libhidlbase libhidltransport libutils \
                                  vendor.display.config@1.0
